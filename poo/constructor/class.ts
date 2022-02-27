@@ -1,6 +1,11 @@
-class Employee {
+class EmployeeConstructor {
     private name: string;
     private id: number;
+
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name;
+    }
 
     public getName(): string {
         return this.name;
@@ -20,9 +25,7 @@ class Employee {
 
 }
 
-const employee = new Employee();
-employee.setId(1);
-employee.setName('Name');
+const employee = new EmployeeConstructor(1, 'Name');
 
 console.log(employee.getId());
 console.log(employee.getName());

@@ -1,4 +1,4 @@
-class Employee {
+class EmployeeStruct {
     private name: string;
     private id: number;
 
@@ -20,7 +20,7 @@ class Employee {
 
 }
 
-const employee = new Employee();
+const employee = new EmployeeStruct();
 employee.setId(1);
 employee.setName('Name');
 
